@@ -15,7 +15,7 @@ body {
     height: 200px;
     margin: 0 0 0 40vw;
     margin-top: -40px;
-    outline: 1px solid #ffffff;
+    outline: 1px solid white;
     transform: scale(3) translateY(50%);
 }
 
@@ -28,7 +28,7 @@ body {
     position:fixed;
     top: -0.5vw;
     left: 30vw;
-
+    z-index: 0;
 }
 
 #version{
@@ -64,4 +64,41 @@ body {
     font-size: 1.5vw;
     font-weight: lighter;
     font-style: oblique;
+}
+
+#borderfade_left{
+    width: 120px;
+    height: 44.4vw;
+    position: fixed;
+    background: linear-gradient(to right, white, transparent 90%);
+    margin-top: -7.5vw;
+    margin-left: 17vw;
+    z-index: 1;
+}
+#borderfade_right{
+    width: 120px;
+    height: 44.4vw;
+    position: fixed;
+    background: linear-gradient(to left, white, transparent 90%);
+    margin-top: -7.5vw;
+    margin-left: 75.5vw;
+    z-index: 1;
+}
+#borderfade_top{
+    width: 70.4vw;
+    height: 120px;
+    position: fixed;
+    background: linear-gradient(to bottom, white, transparent 90%);
+    margin-top: -7.5vw;
+    margin-left: 17vw;
+    z-index: 1;
+}
+#borderfade_bottom{
+    width: 70.4vw;
+    height: 80px;
+    position: fixed;
+    background: linear-gradient(to top, white, transparent 90%);
+    margin-top: 31vw;
+    margin-left: 17vw;
+    z-index: 1;
 }
